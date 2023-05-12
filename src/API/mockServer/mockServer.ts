@@ -62,7 +62,7 @@ export const initializeMockAdapter = () => {
         return [200, countries[idx]];
     });
 
-    mock.onGet(apiRoutes.getToDo).reply((config) => {
+    mock.onGet(apiRoutes.getToDo).reply(() => {
         return [200, to_do_in_country];
     });
 

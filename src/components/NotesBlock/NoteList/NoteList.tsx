@@ -1,4 +1,3 @@
-import React from 'react';
 import {Box, Typography} from "@mui/material";
 import {grey} from "@mui/material/colors";
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';

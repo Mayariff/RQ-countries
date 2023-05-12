@@ -1,11 +1,9 @@
-import React, {useEffect} from 'react';
 import '@fontsource/roboto/500.css';
-import {Outlet, useNavigate, useParams} from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import {Box, Button} from "@mui/material";
 import {grey} from '@mui/material/colors';
 import {useQueryErrorResetBoundary} from "@tanstack/react-query";
 import {ErrorBoundary} from 'react-error-boundary';
-import {pageRoutes} from "./Routes";
 
 
 function App() {

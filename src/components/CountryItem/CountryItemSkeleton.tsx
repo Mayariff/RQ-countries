@@ -1,4 +1,3 @@
-import React from 'react';
 import {ImageListItem, ImageListItemBar, Skeleton} from "@mui/material";
 
 const CountryItemSkeleton = () => {
