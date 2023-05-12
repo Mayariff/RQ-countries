@@ -7,7 +7,8 @@
 App создан для знакомства с  ReactQuery. Реализованы CRUD операции, бесконечные запросы, предзагрузка данных, дедупликация.
 Для создания фейкового сервера использован axios-mock-adapter. 
 
-Технологии: React, ReactQuery, MUI, Router-dom , axios, react-error-boundary, vite
+Технологии: React, ReactQuery, MUI, Router-dom , axios, react-error-boundary, сборщик vite
 
 GH-page: https://mayariff.github.io/RQ-countries/
+
 Команда для запуска проекта и сервера: vite
