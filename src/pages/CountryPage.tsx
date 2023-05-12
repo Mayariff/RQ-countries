@@ -1,4 +1,3 @@
-import React from 'react';
 import {useNavigate} from "react-router-dom";
 import {Box, Button, IconButton} from '@mui/material';
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
@@ -26,7 +25,7 @@ const CountryPage = () => {
     return (
         <Box ref={scrollRef}>
             <IconButton sx={{position: 'fixed', top: 8, left: 8, padding: '4px'}}
-                        onClick={() => navigate(pageRoutes.countries)}>
+                        onClick={() => navigate(pageRoutes.countries, {replace: true})}>
                 <ArrowBackOutlinedIcon fontSize={'large'}/>
             </IconButton>
             {

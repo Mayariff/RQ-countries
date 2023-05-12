@@ -2,8 +2,6 @@ import React from 'react';
 import {countryType} from "../../types/api-types";
 import {IconButton, ImageListItem, ImageListItemBar} from "@mui/material";
 import {useNavigate} from 'react-router-dom';
-import {pathToUrl} from "../../utils/routing";
-import {pageRoutes} from "../../Routes";
 import {LoremImage} from "../../assets";
 
 type propsType = {
@@ -18,7 +16,7 @@ const CountryItem = React.memo(({country}: propsType) => {
     const img = image ? image : LoremImage
 
     return (
-        <ImageListItem onClick={() => navigate(pathToUrl(pageRoutes.country, {id}))}
+        <ImageListItem onClick={() => navigate(`${id}`)}
                        sx={{filter: 'sepia(.35)', '&:hover': {filter: 'sepia(0)'}}}>
             <img
                 src={`${img}?w=161&fit=crop&auto=format`}

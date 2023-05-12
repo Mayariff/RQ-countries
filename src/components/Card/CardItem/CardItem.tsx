@@ -23,7 +23,7 @@ const CardItem = React.memo(({makeScrollHandler, data}: propsType) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const onClickHandler = useCallback((value: boolean) => {
-        setIsOpen(prev => value)
+        setIsOpen(_prev => value)
         makeScrollHandler()
     }, [])
 

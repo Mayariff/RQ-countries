@@ -15,7 +15,7 @@ const NotesBlock = React.memo(({scrollHandler}: propsType) => {
     const [noteName, setNoteName] = useState('');
     const {isLoading, isError} = useGetNotes()
 
-    const changeHandler = useCallback((value: string) => setNoteName(v => value), [])
+    const changeHandler = useCallback((value: string) => setNoteName(_prev => value), [])
 
     return (<PointContainer title={'Оставь свои заметки о стране:'} btnTitle={'Заметки о путешествиях'}
                             scrollHandler={scrollHandler}>

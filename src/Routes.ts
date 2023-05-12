@@ -6,9 +6,9 @@ export const apiRoutes = {
     country_notes: '/api/country_notes/:id?',
 };
 
-export const  pageRoutes = {
+export const pageRoutes = {
     main: '/',
     countries: '/countries',
-    country: '/countries/:id',
+    country: 'countries/:id',
 };
 

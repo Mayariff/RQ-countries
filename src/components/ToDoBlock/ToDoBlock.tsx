@@ -31,7 +31,7 @@ const ToDoBlock = React.memo(({handleIsOpen}: propsType) => {
 
     return (<>
             <Typography component="h2" sx=
-                {{paddingLeft: '16px'}}> {'Оставь свои заметки о стране:'} </Typography>
+                {{paddingLeft: '16px'}}> {'Что мы успели сделать:'} </Typography>
             <List sx={{width: '100%', maxWidth: 550}}>
                 {
                     toDoList!.map((item) => <ToDoPoint key={item.id} item={item}
